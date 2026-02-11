@@ -48,6 +48,8 @@ public class Main {
             System.out.println("Es mayor de edad: No");
         }
 
+        System.out.println("Mensaje inspirador: Yo " + nombre + " con la edad de " + edad + " pasaré con 10 la materia.");
+
         sc.close();
     }
 }
