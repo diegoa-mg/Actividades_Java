@@ -1,5 +1,3 @@
-import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +13,7 @@ public class Main {
         String num = sc.nextLine();
 
         System.out.print("Ingresa el saldo de la cuenta: ");
-        int saldo = sc.nextInt();
+        double saldo = sc.nextDouble();
         sc.nextLine();
 
         CuentaBancaria MiCuenta = new CuentaBancaria(titu, num, saldo);
