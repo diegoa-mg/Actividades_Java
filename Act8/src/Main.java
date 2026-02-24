@@ -33,6 +33,7 @@ public class Main {
         if (op == 's' || op == 'S'){
             System.out.print("Ingrese la cantidad: ");
             cantidad = sc.nextDouble();
+
             if (cantidad <= saldo){
                 MiCuenta.retirar(cantidad);
             }
