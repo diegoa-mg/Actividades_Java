@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Ingresa tu matrícula:");
         matricula = sc.nextLine();
 
-        for (int i = 0; i < 7; i++){
+        for (int i = 0; i < calificaciones.length; i++){
             System.out.println("Ingresa la calificación " + (i + 1) + ": ");
             calificaciones[i] = sc.nextDouble();
 
