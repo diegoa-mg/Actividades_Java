@@ -15,6 +15,6 @@ public class Automovil {
     }
 
     public void informacion(){
-        System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Kilometraje: " + kilometraje + " km.");
+        System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Año: " + anio + ", Kilometraje: " + kilometraje + " km.");
     }
 }
