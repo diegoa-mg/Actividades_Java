@@ -8,7 +8,11 @@ public class Estudiante {
         this.calificaciones = calificaciones;
     }
 
-    public void calcularPromedio(){
-        for (int i = 0; i <)
+    public double calcularPromedio(double suma){
+        return suma / 7;
+    }
+
+    public void mostrarDatos(double promedio){
+        System.out.println("Nombre: " + nombre + ", Matrícula: " + matricula + ", Promedio: " + promedio);
     }
 }
