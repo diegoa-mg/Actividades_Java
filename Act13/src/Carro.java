@@ -1,8 +1,8 @@
-public class Automovil {
+public class Carro {
     private String marca, modelo;
     private double velocidadMaxima, gastoGasolinaPorLitro;
 
-    public Automovil(String marca, String modelo, double velocidadMaxima, double gastoGasolinaPorLitro){
+    public Carro(String marca, String modelo, double velocidadMaxima, double gastoGasolinaPorLitro){
         this.marca = marca;
         this.modelo = modelo;
         this.velocidadMaxima = velocidadMaxima;
@@ -26,7 +26,7 @@ public class Automovil {
         return gastoGasolinaPorLitro;
     }
 
-    // get
+    // set
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -43,15 +43,7 @@ public class Automovil {
         this.gastoGasolinaPorLitro = gastoGasolinaPorLitro;
     }
 
-    public double calcularGastoDeGasolina(double distancia, double precioPorLitro){
-        return (distancia / gastoGasolinaPorLitro) * precioPorLitro;
-    }
-
-    public void mostrarInformacion(){
-        System.out.println("\n --- Informacion del Automovil ---");
-        System.out.println("Marca: " + marca);
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Velocidad Máxima: " + velocidadMaxima);
-        System.out.println("Gasto de Gasolina por Litro: " + gastoGasolinaPorLitro);
+    public double calcularGastoDeGasolina(double distancia){
+        return (distancia / gastoGasolinaPorLitro);
     }
 }

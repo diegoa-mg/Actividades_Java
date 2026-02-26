@@ -6,7 +6,6 @@ public class Main {
 
         String marca, modelo;
         double veloMax, gastoGasPorLitro, distancia;
-        double precioPorLitro = 23.57;
         int opc;
 
         System.out.println("Ingresa la marca de tu carro:");
@@ -21,9 +20,13 @@ public class Main {
         System.out.println("Ingresa el gasto de gasolina por litro de tu " + modelo +":");
         gastoGasPorLitro = sc.nextDouble();
 
-        Automovil Carro1 = new Automovil(marca, modelo, veloMax, gastoGasPorLitro);
+        Carro Carro1 = new Carro(marca, modelo, veloMax, gastoGasPorLitro);
 
-        Carro1.mostrarInformacion();
+        System.out.println("\n --- Informacion del Automovil ---");
+        System.out.println("Marca: " + Carro1.getMarca());
+        System.out.println("Modelo: " + Carro1.getModelo());
+        System.out.println("Velocidad Máxima: " + Carro1.getVelocidadMaxima());
+        System.out.println("Gasto de Gasolina por Litro: " + Carro1.getGastoGasolinaPorLitro());
 
         do{
             System.out.println("\n --- Menú ---");
@@ -66,22 +69,25 @@ public class Main {
                     break;
 
                 case 5:
-
                     break;
 
                 default:
-
+                    System.out.println("Opción inválida.");
                     break;
             }
 
         }while (opc != 5);
 
-        Carro1.mostrarInformacion();
+        System.out.println("\n --- Informacion del Automovil ---");
+        System.out.println("Marca: " + Carro1.getMarca());
+        System.out.println("Modelo: " + Carro1.getModelo());
+        System.out.println("Velocidad Máxima: " + Carro1.getVelocidadMaxima());
+        System.out.println("Gasto de Gasolina por Litro: " + Carro1.getGastoGasolinaPorLitro());
 
         System.out.println("\nIngresa la distancia recorrida en km:");
         distancia = sc.nextDouble();
 
-        System.out.println("Gasto de Gasolina: " + Carro1.calcularGastoDeGasolina(distancia, precioPorLitro));
+        System.out.println("Gasto de Gasolina: " + Carro1.calcularGastoDeGasolina(distancia));
 
         sc.close();
     }
