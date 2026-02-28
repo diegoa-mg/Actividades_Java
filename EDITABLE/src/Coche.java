@@ -1,24 +1,23 @@
-public class Carro {
+public class Coche {
     private String marca, modelo;
     private double velocidadMaxima, gastoGasolinaPorLitro;
 
-    public Carro(String marca, String modelo, double velocidadMaxima, double gastoGasolinaPorLitro){
+    public Coche(String marca, String modelo, double velocidadMaxima, double gastoGasolinaPorLitro){
         this.marca = marca;
         this.modelo = modelo;
         this.velocidadMaxima = velocidadMaxima;
         this.gastoGasolinaPorLitro = gastoGasolinaPorLitro;
     }
 
-    // get
-    public String getMarca() {
+    public String getMarca(){
         return marca;
     }
 
-    public String getModelo() {
+    public String getModelo(){
         return modelo;
     }
 
-    public double getVelocidadMaxima() {
+    public double getVelocidadMaxima(){
         return velocidadMaxima;
     }
 
@@ -26,7 +25,6 @@ public class Carro {
         return gastoGasolinaPorLitro;
     }
 
-    // set
     public void setMarca(String marca) {
         this.marca = marca;
     }
