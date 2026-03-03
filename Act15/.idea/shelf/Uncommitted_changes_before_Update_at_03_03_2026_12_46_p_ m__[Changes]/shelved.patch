@@ -1,0 +1,237 @@
+Index: ../EDITABLE/src/Automovil.java
+===================================================================
+diff --git a/../EDITABLE/src/Automovil.java b/../EDITABLE/src/Automovil.java
+deleted file mode 100644
+--- a/../EDITABLE/src/Automovil.java	(revision e60804aaec33d5505796add4ed6b605fac8e8ab7)
++++ /dev/null	(revision e60804aaec33d5505796add4ed6b605fac8e8ab7)
+@@ -1,21 +0,0 @@
+-public class Automovil {
+-    String marca, modelo;
+-    int anio;
+-    double kilometraje;
+-
+-    public Automovil(String marca, String modelo, int anio, double kilometraje){
+-        this.marca = marca;
+-        this.modelo = modelo;
+-        this.anio = anio;
+-        this.kilometraje = kilometraje;
+-    }
+-
+-    public double conducir(double km){
+-        return kilometraje += km;
+-    }
+-
+-    public void informacion(){
+-        System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Año: " + anio + ", Kilometraje: " + kilometraje + " km.");
+-    }
+-
+-}
+Index: ../Act13/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        Scanner sc = new Scanner(System.in);\r\n\r\n        String marca, modelo;\r\n        double veloMax, gastoGasPorLitro, distancia;\r\n        int opc;\r\n\r\n        System.out.println(\"Ingresa la marca de tu carro:\");\r\n        marca = sc.nextLine();\r\n\r\n        System.out.println(\"Ingresa el modelo de tu \" + marca + \":\");\r\n        modelo = sc.nextLine();\r\n\r\n        System.out.println(\"Ingresa la velocidad máxima de tu \" + modelo + \":\");\r\n        veloMax = sc.nextDouble();\r\n\r\n        System.out.println(\"Ingresa el gasto de gasolina por litro de tu \" + modelo +\":\");\r\n        gastoGasPorLitro = sc.nextDouble();\r\n\r\n        Carro Carro1 = new Carro(marca, modelo, veloMax, gastoGasPorLitro);\r\n\r\n        System.out.println(\"\\n --- Informacion del Automovil ---\");\r\n        System.out.println(\"Marca: \" + Carro1.getMarca());\r\n        System.out.println(\"Modelo: \" + Carro1.getModelo());\r\n        System.out.println(\"Velocidad Máxima: \" + Carro1.getVelocidadMaxima());\r\n        System.out.println(\"Gasto de Gasolina por Litro: \" + Carro1.getGastoGasolinaPorLitro());\r\n\r\n        do{\r\n            System.out.println(\"\\n --- Menú ---\");\r\n            System.out.println(\"1. Cambiar marca.\");\r\n            System.out.println(\"2. Cambiar modelo.\");\r\n            System.out.println(\"3. Cambiar velocidad máxima.\");\r\n            System.out.println(\"4. Cambiar gasto de gasolina por litro.\");\r\n            System.out.println(\"5. Salir\");\r\n            System.out.print(\"Elige una opción: \");\r\n            opc = sc.nextInt();\r\n            sc.nextLine(); // Para eliminar el bug\r\n\r\n            switch (opc) {\r\n                case 1:\r\n                    System.out.println(\"Ingresa la marca: \");\r\n                    marca = sc.nextLine();\r\n\r\n                    Carro1.setMarca(marca);\r\n                    break;\r\n\r\n                case 2:\r\n                    System.out.println(\"Ingresa el modelo: \");\r\n                    modelo = sc.nextLine();\r\n\r\n                    Carro1.setModelo(modelo);\r\n                    break;\r\n\r\n                case 3:\r\n                    System.out.println(\"Ingresa la velocidad máxima: \");\r\n                    veloMax = sc.nextDouble();\r\n\r\n                    Carro1.setVelocidadMaxima(veloMax);\r\n                    break;\r\n\r\n                case 4:\r\n                    System.out.println(\"Ingresa el gasto por gasolina: \");\r\n                    gastoGasPorLitro = sc.nextDouble();\r\n\r\n                    Carro1.setGastoGasolinaPorLitro(gastoGasPorLitro);\r\n                    break;\r\n\r\n                case 5:\r\n                    break;\r\n\r\n                default:\r\n                    System.out.println(\"Opción inválida.\");\r\n                    break;\r\n            }\r\n\r\n        }while (opc != 5);\r\n\r\n        System.out.println(\"\\n --- Informacion del Automovil ---\");\r\n        System.out.println(\"Marca: \" + Carro1.getMarca());\r\n        System.out.println(\"Modelo: \" + Carro1.getModelo());\r\n        System.out.println(\"Velocidad Máxima: \" + Carro1.getVelocidadMaxima());\r\n        System.out.println(\"Gasto de Gasolina por Litro: \" + Carro1.getGastoGasolinaPorLitro());\r\n\r\n        System.out.println(\"\\nIngresa la distancia recorrida en km:\");\r\n        distancia = sc.nextDouble();\r\n\r\n        System.out.println(\"Gasto de Gasolina: \" + Carro1.calcularGastoDeGasolina(distancia));\r\n\r\n        sc.close();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Act13/src/Main.java b/../Act13/src/Main.java
+--- a/../Act13/src/Main.java	(revision e60804aaec33d5505796add4ed6b605fac8e8ab7)
++++ b/../Act13/src/Main.java	(date 1772563563030)
+@@ -20,7 +20,7 @@
+         System.out.println("Ingresa el gasto de gasolina por litro de tu " + modelo +":");
+         gastoGasPorLitro = sc.nextDouble();
+ 
+-        Carro Carro1 = new Carro(marca, modelo, veloMax, gastoGasPorLitro);
++        Coche Carro1 = new Coche(marca, modelo, veloMax, gastoGasPorLitro);
+ 
+         System.out.println("\n --- Informacion del Automovil ---");
+         System.out.println("Marca: " + Carro1.getMarca());
+Index: ../EDITABLE/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\r\n\r\npublic class Main{\r\n    public static void main(String[] args){\r\n        Scanner sc = new Scanner(System.in);\r\n\r\n        double km;\r\n\r\n        Automovil Carro1 = new Automovil(\"Volkswagen\", \"GTI\", 2012, 75674.98);\r\n\r\n        System.out.println(\"Cuantos kilometros recorriste?:\");\r\n        km = sc.nextDouble();\r\n\r\n        Carro1.conducir(km);\r\n        Carro1.informacion();\r\n\r\n        sc.close();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../EDITABLE/src/Main.java b/../EDITABLE/src/Main.java
+--- a/../EDITABLE/src/Main.java	(revision e60804aaec33d5505796add4ed6b605fac8e8ab7)
++++ b/../EDITABLE/src/Main.java	(date 1772563563030)
+@@ -1,18 +1,94 @@
++import java.sql.SQLOutput;
+ import java.util.Scanner;
+ 
+-public class Main{
++public class Main {
+     public static void main(String[] args){
+         Scanner sc = new Scanner(System.in);
+ 
+-        double km;
++        String marca, modelo;
++        double veloMax, gastoGasPorLitro, distancia;
++        int opc;
++
++        System.out.println("Ingresa la marca de tu carro:");
++        marca = sc.nextLine();
++
++        System.out.println("Ingresa el modelo de tu " + marca + ":");
++        modelo = sc.nextLine();
++
++        System.out.println("Ingresa la velocidad maxima de tu " + modelo + ":");
++        veloMax = sc.nextDouble();
++
++        System.out.println("Ingresa el gasto de gasolina por litro de tu " + modelo + ":");
++        gastoGasPorLitro = sc.nextDouble();
++
++        Coche Carro1 = new Coche(marca, modelo, veloMax, gastoGasPorLitro);
++
++        System.out.println("\n --- Informacion del Coche ---");
++        System.out.println("Marca: " + Carro1.getMarca());
++        System.out.println("Modelo: " + Carro1.getModelo());
++        System.out.println("Velocidad maxima: " + Carro1.getVelocidadMaxima());
++        System.out.println("Gasto de gasolina por litro: " + Carro1.getGastoGasolinaPorLitro());
++
++        do {
++            System.out.println("\n --- Menu ---");
++            System.out.println("1. Cambiar marca.");
++            System.out.println("2. Cambiar modelo.");
++            System.out.println("3. Cambiar velocidad maxima.");
++            System.out.println("4. Cambiar gasto de gasolina por litro.");
++            System.out.println("5. Salir.");
++            System.out.println("Elige una opcion:");
++            opc = sc.nextInt();
++            sc.nextLine();
++
++            switch (opc){
++                case 1:
++                    System.out.println("Ingresa la marca:");
++                    marca = sc.nextLine();
++
++                    Carro1.setMarca(marca);
++                    break;
++
++                case 2:
++                    System.out.println("Ingresa el modelo:");
++                    modelo = sc.nextLine();
+ 
+-        Automovil Carro1 = new Automovil("Volkswagen", "GTI", 2012, 75674.98);
++                    Carro1.setModelo(modelo);
++                    break;
+ 
+-        System.out.println("Cuantos kilometros recorriste?:");
+-        km = sc.nextDouble();
++                case 3:
++                    System.out.println("Ingresa la velocidad maxima:");
++                    veloMax = sc.nextDouble();
+ 
+-        Carro1.conducir(km);
+-        Carro1.informacion();
++                    Carro1.setVelocidadMaxima(veloMax);
++                    break;
++
++                case 4:
++                    System.out.println("Ingresa el gasto de gasolina por litro:");
++                    gastoGasPorLitro = sc.nextDouble();
++
++                    Carro1.setGastoGasolinaPorLitro(gastoGasPorLitro);
++                    break;
++
++                case 5:
++                    break;
++
++                default:
++                    System.out.println("Opcion invalida.");
++                    break;
++            }
++
++        } while (opc != 5);
++
++        System.out.println("\n --- Informacion del Coche Actualizada ---");
++        System.out.println("Marca: " + Carro1.getMarca());
++        System.out.println("Modelo: " + Carro1.getModelo());
++        System.out.println("Velocidad maxima: " + Carro1.getVelocidadMaxima());
++        System.out.println("Gasto de gasolina por litro: " + Carro1.getGastoGasolinaPorLitro());
++
++        System.out.println("\nIngresa la distancia recorrida en km:");
++        distancia = sc.nextDouble();
++
++        System.out.println("Gasto de gasolina: " + Carro1.calcularGastoDeGasolina(distancia));
+ 
+         sc.close();
+     }
+Index: ../Act13/src/Carro.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Act13/src/Carro.java b/../Act13/src/Coche.java
+rename from ../Act13/src/Carro.java
+rename to ../Act13/src/Coche.java
+--- a/../Act13/src/Carro.java	(revision e60804aaec33d5505796add4ed6b605fac8e8ab7)
++++ b/../Act13/src/Coche.java	(date 1772563563024)
+@@ -1,8 +1,8 @@
+-public class Carro {
++public class Coche {
+     private String marca, modelo;
+     private double velocidadMaxima, gastoGasolinaPorLitro;
+ 
+-    public Carro(String marca, String modelo, double velocidadMaxima, double gastoGasolinaPorLitro){
++    public Coche(String marca, String modelo, double velocidadMaxima, double gastoGasolinaPorLitro){
+         this.marca = marca;
+         this.modelo = modelo;
+         this.velocidadMaxima = velocidadMaxima;
+Index: ../EDITABLE/src/Coche.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../EDITABLE/src/Coche.java b/../EDITABLE/src/Coche.java
+new file mode 100644
+--- /dev/null	(date 1772563563030)
++++ b/../EDITABLE/src/Coche.java	(date 1772563563030)
+@@ -0,0 +1,47 @@
++public class Coche {
++    private String marca, modelo;
++    private double velocidadMaxima, gastoGasolinaPorLitro;
++
++    public Coche(String marca, String modelo, double velocidadMaxima, double gastoGasolinaPorLitro){
++        this.marca = marca;
++        this.modelo = modelo;
++        this.velocidadMaxima = velocidadMaxima;
++        this.gastoGasolinaPorLitro = gastoGasolinaPorLitro;
++    }
++
++    public String getMarca(){
++        return marca;
++    }
++
++    public String getModelo(){
++        return modelo;
++    }
++
++    public double getVelocidadMaxima(){
++        return velocidadMaxima;
++    }
++
++    public double getGastoGasolinaPorLitro() {
++        return gastoGasolinaPorLitro;
++    }
++
++    public void setMarca(String marca) {
++        this.marca = marca;
++    }
++
++    public void setModelo(String modelo) {
++        this.modelo = modelo;
++    }
++
++    public void setVelocidadMaxima(double velocidadMaxima) {
++        this.velocidadMaxima = velocidadMaxima;
++    }
++
++    public void setGastoGasolinaPorLitro(double gastoGasolinaPorLitro) {
++        this.gastoGasolinaPorLitro = gastoGasolinaPorLitro;
++    }
++
++    public double calcularGastoDeGasolina(double distancia){
++        return (distancia / gastoGasolinaPorLitro);
++    }
++}
