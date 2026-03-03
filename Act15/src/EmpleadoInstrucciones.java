@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 public class EmpleadoInstrucciones {
     private String nombre;
     private int edad;
@@ -11,15 +9,15 @@ public class EmpleadoInstrucciones {
         this.salario = salario;
     }
 
-    private String getNombre(){
+    public String getNombre(){
         return nombre;
     }
 
-    private int getEdad(){
+    public int getEdad(){
         return edad;
     }
 
-    private double getSalario(){
+    public double getSalario(){
         return salario;
     }
 
@@ -35,15 +33,15 @@ public class EmpleadoInstrucciones {
         this.salario = salario;
     }
 
-    public void clasificarSalario(){
+    public String clasificarSalario(){
         if(salario > 50000){
-            System.out.println("Alta.");
+            return "Alta";
         }
         else if (salario >= 10000) {
-            System.out.println("Media.");
+            return "Media";
         }
         else{
-            System.out.println("Baja.");
+            return "Baja";
         }
     }
 
@@ -52,9 +50,12 @@ public class EmpleadoInstrucciones {
         System.out.println("Nombre: " + getNombre());
         System.out.println("Edad: " + getEdad());
         System.out.println("Salario: " + getSalario());
+        System.out.println("Clasificación: " + clasificarSalario());
     }
 
-    public void cambiarAtributos(){
-
+    public void cambiarAtributos(String nuevoNombre, int nuevaEdad, double nuevoSalario){
+        setNombre(nuevoNombre);
+        setEdad(nuevaEdad);
+        setSalario(nuevoSalario);
     }
 }
