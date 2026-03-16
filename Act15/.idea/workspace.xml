@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="32d8f00b-d2e1-4dda-998a-3bd9e84a3588" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/../EDITABLE/src/DepartamentoInstrucciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EDITABLE/src/EmpleadoInstrucciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EDITABLE/src/Automovil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EDITABLE/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EDITABLE/src/Main.java" afterDir="false" />
+>>>>>>> d481383dcfa8cace74ca742466446d973cb5485c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
@@ -24,6 +36,14 @@
     &quot;accountId&quot;: &quot;fca30c45-db44-4a13-9a3b-da170e3a02a1&quot;
   }
 }</component>
+=======
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/diegoa-mg/Actividades_Java.git&quot;,
+    &quot;accountId&quot;: &quot;fca30c45-db44-4a13-9a3b-da170e3a02a1&quot;
+  }
+}</component>
+>>>>>>> d481383dcfa8cace74ca742466446d973cb5485c
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -32,6 +52,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
@@ -45,6 +66,25 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ddieg/IdeaProjects/POO - Java/Actividades_Java/Act15/src/Main.java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/ddieg/IdeaProjects/POO - Java/Actividades_Java/Act15/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> d481383dcfa8cace74ca742466446d973cb5485c
   }
 }</component>
   <component name="SharedIndexes">
