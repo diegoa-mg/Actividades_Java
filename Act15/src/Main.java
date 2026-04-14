@@ -14,7 +14,7 @@ public class Main {
         do {
             System.out.println("\n --- Menú Interactivo ---");
             System.out.println("1. Ingresar datos de un empleado.");
-            System.out.println("2. Ingresar datos de un departamento.");
+            System.out.println("2. Ingresar datos de un departamento.git push origin main");
             System.out.println("3. Cambiar los atributos de un empleado.");
             System.out.println("4. Cambiar los atributos de un departamento.");
             System.out.println("0. Salir.");
