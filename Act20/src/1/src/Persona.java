@@ -3,8 +3,8 @@ public class Persona {
     int edad;
 
     public Persona(String nombre, int edad){
-        if (nombre.length() < 3){
-            System.out.println("Error: Nombre muy corto.");
+        if (nombre.length() < 3 || !nombre.matches("[a-zA-ZáéíóúÁÉÍÓÚ ]+")){
+            System.out.println("Error: Nombre muy corto o con números.");
             return;
         }
         if (edad < 6 || edad > 100){
