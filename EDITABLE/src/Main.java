@@ -1,7 +1,9 @@
 public class Main{
     public static void main(String[] args){
-        Cuadrado cuad1 = new Cuadrado("Rojo", 4);
-        System.out.println("Color: " + cuad1.color);
-        System.out.println("Tamaño del lado: " + cuad1.ladotam);
+        Gerente geren1 = new Gerente("Diego", 18, 500000, "Software");
+
+        geren1.mostrarDatos();
+        geren1.mostrarSueldo();
+        geren1.mostrarDepartamento();
     }
 }
